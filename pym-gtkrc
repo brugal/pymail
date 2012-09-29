@@ -1,0 +1,51 @@
+#style "message_text_style"
+#{
+	#fg[NORMAL] = { 1.0, 0.0, 0.0 }
+#	font = "-adobe-helvetica-medium-r-normal-*-*-140-*-*-p-*-iso8859-1"
+#}
+
+style "header_textbox_style"
+{
+	fg[NORMAL] = { 0.0, 0.0, 1.0 }
+	#fg[NORMAL] = "yellow"
+	#font = "-adobe-helvetica-medium-r-normal-*-*-140-*-*-p-*-iso8859-1"
+	#font = "-b&h-lucida-medium-r-normal-*-*-140-*-*-p-*-iso8859-1"
+}
+
+style "message_textbox_style"
+{
+	#base[NORMAL] = { 0.0, 0.0, 0.0 }
+	#bg[ACTIVE] = { 1.0, 0.0, 0.0 }
+	#bg[PRELIGHT] = { 1.0, 0.0, 0.0 }
+	#bg[SELECTED] = { 1.0, 0.0, 0.0 }
+	#bg[INSENSITIVE] = { 1.0, 0.0, 0.0 }
+	#fg[NORMAL] = { 0.0, 1.0, 0.0 }
+	#fg[NORMAL] = { 1.0, 1.0, 1.0 }
+
+#	base[NORMAL] = 	{ 0.0, 0.0, 0.0 }
+#	fg[NORMAL] = 	{ 1.0, 1.0, 1.0 }
+	#bg[NORMAL] =  { 1.0, 0.0, 0.0 }
+	#font = "-adobe-helvetica-medium-r-normal-*-*-120-*-*-p-*-iso8859-1"
+	#font = "-adobe-courier-medium-r-normal-*-*-140-*-*-m-*-iso8859-1"
+	#font = "-b&h-lucida-medium-r-normal-*-*-140-*-*-p-*-iso8859-1"
+	#font = "-jis-fixed-medium-r-normal-*-*-150-*-*-c-*-jisx0208.1983-0"
+	#font = "-b&h-lucidatypewriter-medium-r-normal-*-*-140-*-*-m-*-iso8859-1"
+#	font = "-misc-fixed-medium-r-semicondensed-*-*-120-*-*-c-*-iso8859-8"
+	# width 670 to show 80 chars
+	font = "-misc-fixed-medium-r-normal-*-*-120-*-*-c-*-iso8859-8"
+	#font = "-misc-fixed-medium-r-normal-*-*-130-*-*-c-*-iso8859-1"
+	#font = "-dec-terminal-medium-r-normal-*-*-140-*-*-c-*-iso8859-1"
+	#font = "-bitstream-terminal-medium-r-normal-*-*-140-*-*-c-*-iso8859-1"
+}
+
+style "compose_textbox_style"
+{
+	# width 670 to show 80 chars
+        font = "-misc-fixed-medium-r-normal-*-*-120-*-*-c-*-iso8859-8"
+}
+
+#widget "*message_text_label" style "message_text_style"
+widget "*header_textbox" style "header_textbox_style"
+widget "*message_textbox" style "message_textbox_style"
+widget "*compose_textbox" style "compose_textbox_style"
+
